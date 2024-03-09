@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IP Viewer</title>
+    <link rel="icon" href="icon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="icon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Easily visualize and geolocate IP addresses with IP Viewer, a tool developed by Dogo Solutions. Discover the location, Internet Service Provider (ISP), and more information about any IP.">
+    <meta name="author" content="Dogo Solutions">
+    <meta name="keywords" content="IP, IP Viewer, IP Visualizer, IP Visualizador, IP Checker, IP Consulta, Geo IP, IP geolocator, IP location, IP address, IP tool">
+    <meta property="og:title" content="IP Viewer - Tool to Visualize and Geolocate IPs | Dogo Solutions">
+    <meta property="og:site_name" content="IP Viewer">
+    <meta property="og:description" content="Easily visualize and geolocate IP addresses with IP Viewer, a tool developed by Dogo Solutions. Discover the location, Internet Service Provider (ISP), and more information about any IP.">
+    <meta property="og:url" content="https://ip.doso.es/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/ipaddr.js/lib/ipaddr.min.js"></script>
+    <script src="functions.js"></script>
+    <section class="container mt-4">
+        <h1>IP Viewer 🔍</h1>
+        <div class="form-floating mt-4">
+            <input type="text" class="form-control" id="searchInput" placeholder="" maxlength="70">
+            <label for="searchInput">Enter a valid IP or domain</label>
+            <button type="button" class="btn btn-danger w-100 mt-3" id="searchButton" disabled>Find</button>
+        </div>
+        <div class="card text-center mt-4">
+            <div class="card-header fw-bold" id="resultHeader">⌛ Loading... ⌛</div>
+            <ul class="list-group list-group-flush" id="resultList"></ul>
+        </div>
+    </section>
+    <footer class="footer position-fixed text-center p-2 left-0 bottom-0">
+        <span>Made with ❤️ by Dogo Solutions<script>document.write(" &#8210; " + new Date().getFullYear())</script></span>
+    </footer>
+    <script src="getip.js"></script>
+</body>
+</html>
