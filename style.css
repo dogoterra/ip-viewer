@@ -1,39 +1,31 @@
 body {
     background-color: #121212;
 }
-
 ::selection {
     color: #fff;
     background-color: #dc3545;
 }
-
 .container {
     width: 50vw;
 }
-
 @media (max-width: 700px) {
     .container { width: 70vw; }
 }
-
 @media (max-width: 500px) {
     .container { width: 95vw; }
 }
-
 .list-group-item:hover {
     background-color: #1e2124;
 }
-
 .footer {
     width: 100%;
     background-color: #212121;
     transition: all 0.3s ease;
 }
-
 .footer span::selection {
     color: #000;
     background-color: #fbc13a;
 }
-
 @media (max-height: 700px) {
     .footer { opacity: 0; }
 }
