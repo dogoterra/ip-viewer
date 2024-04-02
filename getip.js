@@ -25,7 +25,7 @@ const validateIP = () => {
 }
 
 const domainToIP = async (value) => {
-    const response = await fetch('https://8.8.8.8/resolve?name=' + value);
+    const response = await fetch('https://dns.google/resolve?name=' + value);
     const data = await response.json();
     const validAnswer = data.Answer && data.Answer.some(answer => answer.type === 1);
     if (validAnswer) {
