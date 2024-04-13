@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
+    <link rel="preconnect" href="https://cdn.doso.es">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IP Viewer</title>
+    <base href="https://viewer.sh/">
     <link rel="icon" href="icon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
     <link rel="icon" href="icon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
     <meta name="description" content="Easily visualize and geolocate IP addresses with IP Viewer, a tool developed by Dogo Solutions. Discover the location, Internet Service Provider (ISP), and more information about any IP.">
@@ -13,12 +15,12 @@
     <meta property="og:site_name" content="IP Viewer">
     <meta property="og:description" content="Easily visualize and geolocate IP addresses with IP Viewer, a tool developed by Dogo Solutions. Discover the location, Internet Service Provider (ISP), and more information about any IP.">
     <meta property="og:url" content="https://viewer.sh/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.doso.es/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/ipaddr.js/lib/ipaddr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dogoterra/ip-viewer/functions.min.js"></script>
+    <script src="https://cdn.doso.es/ipaddr.js/2.1.0/ipaddr.min.js"></script>
+    <script src="functions.js"></script>
     <section class="container mt-4">
         <h1>IP Viewer 🔍</h1>
         <div class="form-floating mt-4">
@@ -34,6 +36,6 @@
     <footer class="footer position-fixed text-center p-2 left-0 bottom-0">
         <span>Made with ❤️ by Dogo Solutions<script>document.write(" &#8210; " + new Date().getFullYear())</script></span>
     </footer>
-    <script src="https://cdn.jsdelivr.net/gh/dogoterra/ip-viewer/getip.min.js"></script>
+    <script src="getip.js"></script>
 </body>
 </html>
