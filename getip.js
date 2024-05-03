@@ -43,7 +43,7 @@ const urlToDomain = (value) => {
 }
 
 const requestAPI = async (value, current) => {
-    const response = await fetch('https://api.doip.me/viewer?f=' + value);
+    const response = await fetch('https://api.doip.me/?f=' + value);
     const data = await response.json();
     if (data.status === 0) {
         headerDisplay(current ? "🔥 Your connection 🔥" : "💛 Result 💛");
