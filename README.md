@@ -14,7 +14,7 @@ To get started with IP Viewer, simply enter a valid IP address or domain name in
 
 ## Installation
 
-There is no installation required for using IP Viewer. You can access it directly from your web browser by visiting [IP Viewer](https://ip.doso.es/).
+There is no installation required for using IP Viewer. You can access it directly from your web browser by visiting [IP Viewer](https://viewer.sh/).
 
 ## Technologies Used
 
@@ -34,4 +34,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by Dogo Solutions - 2024
+Made with ❤️ by Dogo - 2024
